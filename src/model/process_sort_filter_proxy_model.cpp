@@ -7,6 +7,8 @@
 #include "process_sort_filter_proxy_model.h"
 #include "process_table_model.h"
 
+using namespace utils;
+
 ProcessSortFilterProxyModel::ProcessSortFilterProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent)
 {
