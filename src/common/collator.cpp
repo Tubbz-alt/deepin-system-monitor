@@ -2,8 +2,8 @@
 
 #include "collator.h"
 
-std::atomic<Collator *> Collator::m_instance;
-std::mutex Collator::m_mutex;
+std::atomic<utils::Collator *> utils::Collator::m_instance;
+std::mutex utils::Collator::m_mutex;
 
 using namespace utils;
 
