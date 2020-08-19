@@ -5,7 +5,9 @@
 std::atomic<Collator *> Collator::m_instance;
 std::mutex Collator::m_mutex;
 
-int Collator::compare(const QString &left, const QString &right, bool caseIgnoreCompare) const
+using namespace utils;
+
+int utils::Collator::compare(const QString &left, const QString &right, bool caseIgnoreCompare) const
 {
     icu::Collator::EComparisonResult result = icu::Collator::EQUAL;
 
@@ -32,7 +34,7 @@ int Collator::compare(const QString &left, const QString &right, bool caseIgnore
     }
 }
 
-Collator::Collator()
+utils::Collator::Collator()
 {
     UErrorCode ec = U_ZERO_ERROR;
     m_collator = icu::Collator::createInstance(ec);
@@ -44,7 +46,7 @@ Collator::Collator()
     }
 }
 
-Collator::~Collator()
+utils::Collator::~Collator()
 {
     delete m_collator;
 }

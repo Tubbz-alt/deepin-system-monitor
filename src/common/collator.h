@@ -12,6 +12,8 @@
 
 #include <QString>
 
+namespace utils {
+
 class Collator
 {
 public:
@@ -40,5 +42,7 @@ private:
     static std::atomic<Collator *> m_instance;
     static std::mutex m_mutex;
 };
+
+} // !utils
 
 #endif  // COLLATOR_H
