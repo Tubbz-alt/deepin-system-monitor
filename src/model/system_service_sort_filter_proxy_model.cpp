@@ -2,6 +2,8 @@
 #include "common/collator.h"
 #include "system_service_table_model.h"
 
+using namespace utils;
+
 SystemServiceSortFilterProxyModel::SystemServiceSortFilterProxyModel(QObject *parent)
     : QSortFilterProxyModel(parent)
 {
