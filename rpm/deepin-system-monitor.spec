@@ -44,7 +44,7 @@ BuildRequires:  deepin-gettext-tools
 # BuildRequires:  qt5-qtmultimedia-devel
 # BuildRequires:  dtkcore-devel >= 5.1
 BuildRequires:  libicu-devel
-Requires:       hicolor-icon-theme
+#Requires:       hicolor-icon-theme
 Recommends:     deepin-manual
 
 %description
