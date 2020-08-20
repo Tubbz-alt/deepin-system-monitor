@@ -76,10 +76,10 @@ popd
 %doc README.md
 %license LICENSE
 %caps(cap_kill,cap_net_raw,cap_dac_read_search,cap_sys_ptrace=+ep) %{_bindir}/%{name}
-# %{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/appdata/%{name}.appdata.xml
 %{_bindir}/%{name} 
 %{_datadir}/applications/%{name}.desktop
-# %{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
+%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 %{_datadir}/%{name}/translations/*.qm
 %{_datadir}/polkit-1/actions/com.deepin.pkexec.deepin-system-monitor.policy
 
