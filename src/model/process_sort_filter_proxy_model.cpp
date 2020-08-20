@@ -90,7 +90,7 @@ bool ProcessSortFilterProxyModel::lessThan(const QModelIndex &left, const QModel
                     a.at(0) != b.at(0)) {
                 return a < b;
             } else {
-                return Collator::instance()->compare(a, b) < 0;
+                return utils::Collator::instance()->compare(a, b) < 0;
             }
         }
     }
